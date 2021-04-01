@@ -4,10 +4,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start -p 3000",
+    "build-docker": "docker build -t next-app .",
+    "run-docker": "docker run --rm -it -p 3000:3000 next-app"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "10.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
